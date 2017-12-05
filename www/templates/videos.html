@@ -1,0 +1,79 @@
+<ion-view title="Videos" id="pgvideos" class=" ">
+        <ion-nav-buttons side="right">
+                <button class="button button-icon icon ion-plus color_white" ng-click="searchbar()"></button>
+                <button class="button button-icon icon ion-search color_white" ng-click="search()"></button>
+        </ion-nav-buttons>
+        <div class="bar bar-subheader" style="border:none; padding:0; height: 184px;">  
+        <div class="bgvid" id="player" ></div> 
+        </div>
+        
+        <div ng-if="buttonClicked" class="bar bar-subheader" style="border:none; padding:0;">
+                    <div class="outer_search">
+                        <form >
+              
+                           <div class="youtube_lable">
+                                <label class="item item-input search_input" style="padding:0 18% 0 37%;">
+                                        <select ng-model="data.form1.videocat" required>
+                                                <option ng-repeat="cat in video_cat" value="{{cat.id}}">{{cat.name}}</option>
+                                         </select>
+                                        <input class="youtube_search" type="text" ng-model="data.form1.utubeurl" placeholder="Enter Youtube Url" required >
+                                       
+                                    </label> 
+                                    <button type="submit" ng-click="submiturl()" >ADD</button> 
+                                </div>
+                        </form>
+                    
+                        </div>
+
+                        
+                      
+            </div>
+                   <div ng-if="searchbutton" class="bar bar-subheader" style="border:none; padding:0;">
+                        <div class="outer_search">
+                   <label class="item item-input search_input">
+                                            <input class="simple_search" type="text" ng-model="data.search" ng-keyup="search_video(data.search)">
+                                     </label>
+                            </div>
+                           
+                        </div> 
+             
+                    <ion-content style="overflow: scroll; top: 226px;" class="has-header has-subheader" padding="true">
+                            <ion-refresher on-refresh="getvodeos()">
+                                </ion-refresher>
+                                <!-- <select>
+                                        <option>Option 1</option>
+                                        <option selected>Option 2</option>
+                                        <option>Option 3</option>
+                                     </select> -->
+                                   
+
+                                    
+
+
+                     <!-- <div ng-repeat="media in videos">
+                        <div class="thumbnail">
+                            <div class="video-container">
+                               <div ng-click="change_video(media.video_id)">
+                                   <img src="https://img.youtube.com/vi/{{media.video_id}}/0.jpg">
+                                   {{media.title}}
+                               </div>
+                                
+                            </div>
+                        </div>
+                    </div> -->
+
+                   <div class="videos_list">
+                    <div class="list"ng-repeat="media in videos">
+                        
+                            <a class="item item-thumbnail-left" href="#">
+                                    <img ng-click="change_video(media.video_id)" src="https://img.youtube.com/vi/{{media.video_id}}/0.jpg">
+                              <h2> {{media.title}}</h2>
+                            </a>
+                        
+                        </div>                      
+                    </div>
+
+
+
+                    </ion-content>
+                    </ion-view>

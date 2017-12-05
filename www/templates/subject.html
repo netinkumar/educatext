@@ -1,0 +1,27 @@
+<ion-view title="Select Category" id="page6" class=" ">
+
+
+<ion-nav-buttons side="right">
+      <!--<button class="button button-icon icon ion-plus color_white" ui-sref="addACategory"></button>-->
+    </ion-nav-buttons>
+
+
+
+
+
+    <ion-content padding="true" class="has-header">
+    
+
+
+<div class="list bb">
+
+  <div class="item item-divider">
+    Subject
+  </div>
+
+  <a ng-repeat="allsub in subjects" class="item" ui-sref="menu.qa({sub_id:allsub.subjectid})">
+    {{allsub.subjectname}}
+  </a>
+</div>
+    </ion-content>
+</ion-view>

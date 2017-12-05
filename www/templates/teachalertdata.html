@@ -1,0 +1,20 @@
+<ion-view title="Teach Alerts" id="page13" class=" ">
+    <ion-content padding="true" class="has-header">
+        <div id="teachAlerts-button-bar30" class=" button-bar "></div>
+        <div id="teachAlerts-button-bar31" class=" button-bar "></div>
+        <div id="teachAlerts-button-bar32" class=" button-bar "></div>
+        <div id="teachAlerts-button-bar33" class=" button-bar "></div>
+        <div id="teachAlerts-button-bar34" class=" button-bar "></div>
+        <div class="spacer" style="width: 100px; height: 14px;"></div>
+        <div class="btns">
+        <button ng-repeat="alertdata in catagory" style="font-size:14px;text-align:left;" class=" button button-calm  button-block icon-right ion-ios-arrow-forward " ng-click="share(alertdata.name)" >{{alertdata.name}}</button>
+    </div>
+        <div class="spacer" style="width: 100%; height: 7px;"></div>
+        <!-- <button id="teachAlerts-button138" class=" button button-dark  button-block ">Send Alerts</button>
+        <div id="teachAlerts-button-bar36" class=" button-bar ">
+            <button id="teachAlerts-button145" class=" button button-positive  button-block ">Email</button>
+            <button id="teachAlerts-button147" class=" button button-calm  button-block ">SMS</button>
+        </div>
+        <div id="teachAlerts-button-bar35" class=" button-bar "></div> -->
+    </ion-content>
+</ion-view>

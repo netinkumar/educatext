@@ -1,0 +1,43 @@
+<ion-view title="Edit Profile" id="page18" class=" ">
+
+    <!--<ion-nav-buttons side="left">
+      <button class="button button-icon icon ion-navicon color_white" menu-toggle="left"></button>
+      
+    </ion-nav-buttons>-->
+<ion-nav-buttons side="right">
+      <button class="button button-icon color_white" ui-sref="menu.home">Done</button>
+    </ion-nav-buttons>
+
+
+    <ion-content padding="false" class="has-header">
+        <div class="profile_out">
+        	<div class="center_img"  ng-repeat="userdata in uservalues">
+            	<img src="{{baseurl}}{{userdata.image}}" />
+                <h3>User Name</h3>
+                <button type="button" ng-click="actionsheet()">Upload</button>
+            </div>
+        </div>
+        <div class="edit_form">
+          <form name="form" ng-submit="form.$valid && eprofile()">
+        <div class="list">
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">First Name</span>
+            <input type="text" placeholder="John" ng-model="data.update.fname">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Last Name</span>
+            <input type="text" placeholder="Suhr" ng-model="data.update.lname">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Email</span>
+            <input type="text" placeholder="john@suhr.com" ng-model="data.update.email">
+          </label>
+        </div>
+        <input class="last_btn" type="submit" name="submit" value="Update">
+         </form>
+        </div>
+        
+        
+    </ion-content>
+   
+</ion-view>

@@ -1,0 +1,32 @@
+<ion-view title="Questions and Answers" id="page6" class=" ">
+
+
+<ion-nav-buttons side="right">
+      <!--<button class="button button-icon icon ion-plus color_white" ui-sref="addACategory"></button>-->
+    </ion-nav-buttons>
+
+
+
+<div class="bar bar-subheader" style="border:none; padding:0;">
+<div class="outer_search ">
+      <label class="item item-input search_input category_search">
+        <input type="text" placeholder="Search">
+        <i class="icon ion-search placeholder-icon"></i>
+      </label>
+    </div>
+</div>
+
+    <ion-content padding="true" class="has-header has-subheader">
+        <div class="list category_list">
+        <div class="item qa" ng-if="qa.length>0" ng-repeat="qesa in qa">
+           
+            <h3><span class="question">Q.</span><span ng-bind-html="qesa.question | to_trusted"></span></h3>
+            <p><span class="ans">A.</span><span ng-bind-html="qesa.answer | to_trusted"></span></p>
+            <buton ng-click="share(qesa.question, qesa.answer, qesa.questionid)">share</buton>
+       </div>
+        <div class="item qa" ng-if="qa.length<=0">
+             <h3>NO QA FOR THIS SUBJECT</h3>
+        </div>
+         </div>
+    </ion-content> 
+</ion-view>

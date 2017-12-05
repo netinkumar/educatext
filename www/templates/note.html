@@ -1,0 +1,35 @@
+<ion-view title="Notes" id="page6" class=" " hide-nav-bar="false">
+
+<!-- <ion-header-bar align-title="center" id="div1" class="bar-light map_header" style="background:#008386;">
+  <div class="buttons">
+    <button ui-sref="menu.home" class="button back-button buttons  button-clear header-item" style="color:#fff;"><i class="icon ion-android-arrow-back"></i></button>
+  </div>
+ <h4 style="color:#fff; text-align:center; width:82%; line-height:14px; float:left;">Notes</h4>
+ 
+    
+    
+</ion-header-bar> -->
+
+    <ion-content padding="true" class="has-header">
+
+<ion-nav-buttons side="right">
+      <button class="button button-icon icon ion-plus color_white" ui-sref="menu.home"></button>
+    </ion-nav-buttons>
+       
+       <div class="list note_list">
+  <div class="item item-icon-left item-button-right" >
+ <a ui-sref="menu.docnotes({stu_id: stuid})">
+    Docs NOTES
+    </a>
+  </div>
+  
+   <div class="item item-icon-left item-button-right" >
+   <a ui-sref="menu.textnote({stu_id: stuid})">
+    TEXT NOTES
+
+    </a>
+  </div>
+</div>
+ 
+</ion-content>
+</ion-view>

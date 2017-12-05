@@ -1,0 +1,20 @@
+<ion-view title="Select Author" id="page11" class=" ">
+    
+
+
+
+<div class="bar bar-subheader" style="border:none; padding:0;">
+<div class="outer_search">
+      <label class="item item-input search_input select_author">
+        <input type="text" placeholder="Search">
+        <i class="icon ion-search placeholder-icon"></i>
+      </label>
+    </div>
+</div>
+
+    <ion-content padding="true" class="has-header has-subheader">
+
+ <button ng-repeat="authrlist in authorlist" ui-sref="menu.selectAuthorquotes({author_id: authrlist.id})" style="font-size:14px;text-align:left;" class=" button cat_btn button-calm  button-block icon-right ion-ios-arrow-forward ">{{authrlist.f_name}} {{authrlist.l_name}}</button>
+
+    </ion-content>
+</ion-view>

@@ -1,0 +1,26 @@
+<ion-view title="{{pdffile[0].name}}" id="page16" class=" ">
+    <ion-content padding="true" class="has-header">
+        <div id="albertEinstein-button-bar53" class=" button-bar "></div>
+        <div id="albertEinstein-button-bar54" class=" button-bar "></div>
+        <div id="albertEinstein-button-bar55" class=" button-bar "></div>
+        <div id="albertEinstein-button-bar56" class=" button-bar "></div>
+        <div id="albertEinstein-button-bar57" class=" button-bar "></div>
+        <div id="albertEinstein-button-bar58" class=" button-bar "></div>
+        <div id="albertEinstein-button-bar59" class=" button-bar "></div>
+        <div class="spacer" style="width: 300px; height: 114px;"></div>
+       
+        <div class="spacer" style="width: 300px; height: 32px;"></div>
+        <div class="text_section" ng-repeat="pdff in pdffile">
+        
+ 
+<pdf-viewer
+    delegate-handle="my-pdf-container"
+    url="pdfb_url+pdff.saved_name"
+    scale="1"
+    show-toolbar="false"
+    ></pdf-viewer>
+            
+        </div>
+        
+    </ion-content>
+</ion-view>

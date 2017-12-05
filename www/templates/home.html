@@ -1,0 +1,95 @@
+<ion-view title="Home" id="page4" class="">
+    <ion-nav-buttons side="right">
+        <button class="button button-clear button-positive white_txt" ng-click="goto()">select</button>
+    </ion-nav-buttons>
+    <ion-content padding="false" class="has-header">
+
+
+        <div class="row">
+            <div class="col">
+                <a ui-sref="menu.selectCategory" class="menu_box">
+                	<img src="img/categories.png" width="70%"/>
+                    <h3>Category</h3>
+                </a>
+            </div>
+            <div class="col">
+                <a ui-sref="menu.selectAuthor" class="menu_box">
+                	<img src="img/aouthers.png" width="70%"/>
+                    <h3>Author</h3>
+                </a>
+            </div>
+            <div class="col">
+                <a ui-sref="menu.teachalertdata({student_id: id})" class="menu_box">
+                	<img src="img/teach alert.png" width="70%"/>
+                    <h3>Teach Alert</h3>
+                </a>
+            </div>
+
+        </div>
+        <div class="row">
+
+            <div class="col">
+                <a ui-sref="menu.contactUs" class="menu_box">
+                	<img src="img/contacts.png" width="70%"/>
+                    <h3>Contact Us</h3>
+                </a>
+            </div>
+            <!-- <div class="col">
+                <a ui-sref="menu.aboutUs" class="menu_box">
+                	<img src="img/about.png" width="70%"/>
+                    <h3>About</h3>
+                </a>
+            </div> -->
+            <div class="col">
+                <a ui-sref="menu.videos({stu_id: id})" class="menu_box">
+                	<img src="img/video.png" width="70%"/>
+                    <h3>Videos</h3>
+                </a>
+            </div>
+
+            <div class="col">
+                <a ui-sref="menu.ebook" class="menu_box">
+                	<img src="img/ebook.png" width="70%"/>
+                    <h3>Ebook</h3>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <a ui-sref="menu.Words" class="menu_box">
+                	<img src="img/words.png" class="qwert" width="70%"/>
+                    <h3>Words</h3>
+                </a>
+            </div>
+            <div class="col">
+                <a ui-sref="menu.audio" class="menu_box">
+                	<img src="img/audio.png" class="qwert" width="70%"/>
+                    <h3>audio </h3>
+                </a>
+            </div>
+            <div class="col">
+                <a ui-sref="menu.note" class="menu_box">
+                	<img src="img/note1.png" class="qwert" width="70%"/>
+                    <h3>Notes</h3>
+                </a>
+            </div>
+        </div>
+
+       
+        <div class="quote_day">
+            <h2 id="home-heading2" style="color:#FFFFFF;text-align:center;" class=" ">Quote of the Day</h2>
+            <div class="question_box">
+
+                <p ng-bind-html="todayquote | to_trusted"></p>
+                <h3>-- {{authorname}}</h3>
+            </div>
+        </div>
+
+
+
+
+
+
+    </ion-content>
+</ion-view>

@@ -1,0 +1,29 @@
+<ion-view title="Select Category" id="page6" class=" ">
+
+
+<ion-nav-buttons side="right">
+      <!--<button class="button button-icon icon ion-plus color_white" ui-sref="addACategory"></button>-->
+    </ion-nav-buttons>
+
+
+
+<div class="bar bar-subheader" style="border:none; padding:0;">
+<div class="outer_search">
+      <label class="item item-input search_input category_search">
+        <input type="text" placeholder="Search" ng-model="search.name">
+        <i class="icon ion-search placeholder-icon"></i>
+      </label>
+    </div>
+</div>
+
+    <ion-content padding="true" class="has-header has-subheader">
+<div class="list category_list" ng-repeat="catageory in cat_data  | filter:search | limitTo:listlength">
+<a class="item item-thumbnail-left" ui-sref="menu.selectGrade({catid:catageory.id})">
+    <span> <img src="{{catageory.image}}"></span>
+      <h2>{{catageory.name}}</h2>
+      <p ng-bind-html-unsafe="catageory.description"></p>
+    </a>
+</div>
+   <ion-infinite-scroll ng-if="!noMoreItemsAvailable" immediate-check="false" on-infinite="loadMore()" distance="100%"></ion-infinite-scroll>
+    </ion-content>
+</ion-view>

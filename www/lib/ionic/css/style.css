@@ -1,0 +1,633 @@
+@charset "utf-8";
+/* CSS Document */
+
+.menu_box img {
+    width: 80px;
+}
+.bar .title {
+    font-size: 19px;
+    line-height: 50px !important;
+}
+.bb a {
+    background: #008387;
+    color: #fff;
+}
+.popup .button {
+    padding: 0;
+}
+.custom_icon {
+  font-size: 24px;
+  min-width: 28px !important;
+  color:#004143 !important;
+}
+ion-header-bar {
+  background: #008387 !important;
+  color: #fff !important;
+  border-bottom:none !important;
+}
+.bar.bar-stable .title {
+  color: #fff !important;
+}
+.bar.bar-stable {
+    color: #fff !important;
+}
+.left-buttons button{
+	color: #fff !important;
+	}
+.custom_input {
+  border-color: #668e8e;
+  border-radius: 7px !important;
+}
+.login_btn {
+  background: #008387!important;
+  border: 1px solid #005c60 !important;
+  border-radius: 7px !important;
+}
+.sign_boot {
+    color: #747474;
+    text-align: center;
+}
+.sign_up {
+    color: #000;
+    font-weight: 500;
+    padding-left: 5px;
+    text-decoration: none;
+}
+.btns .button{
+    background: #008387!important;
+}
+.menu_box {
+    text-align: center;
+    text-decoration: none;
+    width:100%;
+    float: left;
+}
+.right-buttons .button {
+    color: #fff !important;
+    text-transform: capitalize;
+    font-weight:400 !important;
+}
+.menu_box h3 {
+  color: #008387;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.quote_day {
+  background: #008387;
+  color: #fff;
+  padding: 15px 15px 30px;
+}
+
+.question_box {
+    background: #00c6c9;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+.question_box h3 {
+    color: #fff;
+    font-size: 18px;
+}
+.outer_search {
+    background: #006567!important;
+    padding: 6px 10px;
+    width: 100%;
+    float: left;
+}
+.search_input {
+  border: none !important;
+  border-radius: 6px;
+  padding: 0px;
+}
+.category_search{
+    padding: 0 10px;
+}
+.search_input .youtube_search {
+    padding: 0;
+    width:100%;
+}
+.youtube_lable{
+    width:100%;
+    float: left;
+    position: relative;
+}
+.select_author{
+    padding: 0 10px;
+}
+  .search_input .simple_search {
+    padding:0 10px;
+  }
+.cat_btn {
+  background: #008387!important;
+  width:100%;
+  float:left;
+  text-transform: capitalize;
+}
+.color_white{
+	color:#fff !important;
+	}
+.add_cate{
+	background:#008387 !important;
+	padding:20px 10px !important;
+	float:left;
+	width:100%;
+	}
+.add_cate h1 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 300;
+}
+.add_cate input {
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+.btn_out {
+    margin: 0 auto;
+    padding:0;
+    width: 170px;
+}
+.btn_out a {
+    background: #00c6c9;
+    border-radius: 3px;
+    float: left;
+    margin: 15px 5px 0;
+    padding: 7px 5px;
+    text-align: center;
+    width: 75px;
+	color:#024244;
+}
+
+.btn_left {
+    background: #00c6c9;
+    border-radius: 3px;
+    float: left;
+    margin: 5px;
+    padding: 7px 5px;
+    text-align: center;
+    width: 75px;
+	color:#024244;
+}
+.btn_right {
+    background: #00c6c9;
+    border-radius: 3px;
+    float: right;
+    margin: 5px;
+    padding: 7px 5px;
+    text-align: center;
+    width: 75px;
+	color:#024244;
+}
+.save_outer {
+  background: #008387;
+  bottom: 0;
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+}
+.back-button{
+	color:#fff !important;
+	}
+.text_section {
+  color: #004143;
+  text-align: center;
+}
+
+/*=======Profile=========*/
+
+
+.center_img {
+    padding: 10px;
+    text-align: center;
+}
+.center_img img {
+    border-radius: 62px 0 62px;
+}
+.center_img > h3 {
+  font-size: 17px;
+  font-weight: 300;
+  margin: 0;
+  padding: 10px 0;
+}
+
+
+.question {
+    color: brown;
+    padding-right: 5px;
+}
+.ans {
+    font-weight: 800;
+    color: green;
+    padding-right: 5px;
+    float: left;
+}
+.item.qa h3 {
+    font-weight: 800;
+    color: #000;
+}
+.item.qa p{
+    color: #999;
+    white-space: normal;
+}
+
+/*****************Notes*****************/
+.note_list {
+    width: 100%;
+    float: left;
+}
+
+.note_list .item {
+    width: 100%;
+    float: left;
+    padding: 0;
+    border: none;
+}
+
+.note_list .item a {
+    width: 100%;
+    float: left;
+    height: 47px;
+    border-radius: 4px;
+    background: #008387!important;
+    margin:4px 0;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 14px;
+}
+/*****************Notes End*****************/
+
+.button.button-block, .button.button-full {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+/*****************Select Category Start*****************/
+
+.category_list {
+    width: 100%;
+    float: left;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+    text-transform: capitalize;
+    box-shadow: 1px 1px 5px #ddd;
+    margin-bottom: 10px;
+}
+
+.category_list a {
+    width: 100%;
+    float: left;
+    border: none;
+    position: relative;
+}
+.category_list a h2 {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    font-weight: 500;
+    color: #008387;
+}
+.category_list a span img {
+    width: 100%;
+    float: left;
+    height: 100%;
+}
+.category_list a span {
+    width: 80px;
+    height: 70px;
+    position: absolute;
+    left: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.category_list a p {
+    width: 100%;
+    float: left;
+    color: #484848;
+    font-size: 14px;
+}
+
+.category_list-list ion-item{
+    width: 100%;
+    float: left;
+    height: 47px;
+    border-radius: 4px;
+    background: #008387!important;
+    margin: 4px 0;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/*****************Select Category End*****************/
+
+
+
+/*****************Select Author Start*****************/
+.select_author h2 {
+    width: 100%;
+    float: left;
+    color: #fff;
+    font-size: 22px;
+    margin: 10px 0 15px 0;
+}
+.select_author {
+    width: 100%;
+    float: left;
+}
+.select_author p {
+    width: 100%;
+    float: left;
+    margin: 0;
+    line-height: 28px;
+}
+.select_author span {
+    float: left;
+    width: 100%;
+    padding:8px 10px;
+}
+
+
+/*****************Audio Start*****************/
+.audio{
+    width:100%;
+    float: left;
+}
+.audio a{
+        width: 100%;
+        float: left;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        background: #fff;
+        text-transform: capitalize;
+        box-shadow: 1px 1px 5px #ddd;
+        padding-right: 140px;
+        position: relative;
+}
+.audio a .play {
+    position: absolute;
+    right: 78px;
+    width: 50px;
+    background: transparent;
+    border: 1px solid #008387;
+    border-radius: 4px;
+    color: #008387;
+    z-index: 999;
+    text-transform: capitalize;
+}
+.audio a .stop {
+    position: absolute;
+    right: 20px;
+    width: 50px;
+    background: transparent;
+    border: 1px solid #e61440;
+    border-radius: 4px;
+    color: #e61440;
+    z-index: 999;
+    text-transform: capitalize;
+}
+
+
+
+/*****************Videos Start*****************/
+
+.videos_list {
+    width: 100%;
+    float: left;
+}
+.videos_list .list {
+    width: 100%;
+    float: left;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+    text-transform: capitalize;
+    box-shadow: 1px 1px 5px #ddd;
+    margin-bottom: 8px;
+}
+
+.videos_list .list a {
+    padding-left: 140px;
+}
+
+.videos_list .list a
+ img {
+    max-width: 120px;
+    overflow: hidden;
+    border-radius: 2px;
+    max-height: 80px;
+}
+.videos_list .list a h2 {
+    width: 100%;
+    float: left;
+    white-space: normal;
+    font-size: 15px;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.outer_search select {
+    position: absolute;
+    left: 4px;
+    width: 34%;
+    border: 1px solid #008387;
+    border-radius: 3px;
+    height: 28px;
+    color: #008387;
+    z-index: 1;
+    background: transparent !important;
+}
+
+.outer_search input{
+    padding: 0 5px;
+}
+.outer_search button {
+    position: absolute;
+    right: 4px;
+    min-height: 15px;
+    height: 28px;
+    border-radius: 3px;
+    border: 1px solid #008387;
+    color: #008387;
+    background: #fff;
+    line-height: 25px;
+    z-index: 999;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+
+/*****************Ebook Start*****************/
+
+.main_box_ebook {
+    width: 100%;
+    float: left;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px 8px;
+    box-shadow: 1px 1px 5px #ddd;
+    border-radius: 4px;
+}
+.left_ebook {
+    width: 50%;
+    float: left;
+    padding: 0 5px;
+    border-right: 1px solid #ddd;
+}
+
+.right_ebook {
+    width: 50%;
+    float: left;
+    padding: 0 5px;
+    border-right: 1px solid #ddd;
+}
+
+.btn_ebook {
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+}
+
+.left_ebook p, .right_ebook p {
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.left_ebook span, .right_ebook span {
+    width: 100%;
+    float: left;
+    text-transform: capitalize;
+    font-size: 14px;
+    text-align: center;
+}
+
+.btn_ebook a {
+    width: 30%;
+    margin: auto;
+    color: #008387;
+}
+
+
+
+/*****************Edit profile Start*****************/
+
+.profile_out button {
+    width: 100px;
+    border-radius: 4px;
+    background: transparent;
+    border: 1px solid #008387;
+    height: 30px;
+    font-weight: 400;
+    color: #008387;
+    text-transform: capitalize;
+}
+.edit_form .last_btn {
+    width: 100px;
+    border-radius: 4px;
+    background: #008387;
+    border: 1px solid #008387;
+    height: 30px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    margin: 0 auto;
+    float: none;
+    display: block;
+}
+.edit_form .list span {
+    color: #008387;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+
+/*****************Search_word Start*****************/
+
+.aa {
+    line-height: 0;
+    top: 0;
+    min-height: 34px;
+}
+.aa .icon::before {
+    font-size: 18px !important;
+}
+
+
+
+
+/*****************Quest_Answer Start*****************/
+
+.item.qa h3 span {
+    float: left;
+    width: auto;
+    font-weight: 500;
+}
+
+.item.qa h3 span p {
+    width: 100%;
+    float: left;
+    color: #000;
+    font-weight: 600;
+}
+.item.qa buton {
+    width: auto;
+    float: left;
+    background: #008387;
+    padding: 4px 10px;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 6px;
+    font-size: 14px;
+}
+
+
+
+
+/*****************Contact_us Start*****************/
+
+.contact {
+    width: 100%;
+    float: left;
+    box-shadow: 0 0 10px #ddd;
+    padding: 10px;
+}
+
+.contact h3 {
+    width: 100%;
+    float: left;
+    color: #008387;
+    text-align: center;
+}
+
+.contact p {
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.menu-content {
+    -webkit-transform: none;
+    transform: none;
+    box-shadow: -2px 0px 2px rgba(0, 0, 0, 0.2), 1px 0px 2px rgba(0, 0, 0, 0.2) !important;
+    -moz-box-shadow: -2px 0px 2px rgba(0, 0, 0, 0.2), 1px 0px 2px rgba(0, 0, 0, 0.2) !important;
+    -webkit-box-shadow:-2px 0px 2px rgba(0, 0, 0, 0.2), 1px 0px 2px rgba(0, 0, 0, 0.2) !important;
+    border-left: 1px solid #ddd;
+}

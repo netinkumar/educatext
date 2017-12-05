@@ -1,0 +1,20 @@
+<ion-view title="Notes" id="page6" class=" " hide-nav-bar="true">
+
+<ion-header-bar align-title="center" id="div1" class="bar-light map_header" style="background:#008386;">
+  <div class="buttons">
+    <button ui-sref="menu.home" class="button back-button buttons  button-clear header-item" style="color:#fff;"><i class="icon ion-android-arrow-back"></i></button>
+  </div>
+ <h4 style="color:#fff; text-align:center; width:82%; line-height:14px; float:left;">Doc Notes</h4>
+    <a class="button button-clear button-positive"  ng-click="choosefile()"><i style="color:#fff;" class="icon ion-plus-round"></i></a>
+    
+    
+</ion-header-bar>
+     <ion-content padding="true" class="has-header">
+<div class="list">
+<div style="padding: 8px 10px;" class="item item-icon-left item-button-right" ng-repeat="docs in docfiles" ng-if="docs.file_name!=''" >
+<a ng-click="downloadfile(docs.file_name)">{{docs.actual_name}}</a>
+ </div>
+  {{downloadProgress}}
+</div>
+ 
+</ion-content>

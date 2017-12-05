@@ -1,0 +1,13 @@
+{
+  "name": "myApp",
+  "app_id": "",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://netin.crystalbiltech.com/xamarine/api"
+    }
+  ],
+  "integrations": {},
+  "type": "ionic1",
+  "watchPatterns": []
+}

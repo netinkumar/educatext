@@ -1,0 +1,27 @@
+<ion-view title="Grade" id="page6" class=" ">
+
+
+<ion-nav-buttons side="right">
+      <!--<button class="button button-icon icon ion-plus color_white" ui-sref="addACategory"></button>-->
+    </ion-nav-buttons>
+
+
+    <ion-content padding="true" class="has-header">
+    
+
+
+        <div class="list category_list" style="margin-bottom: 0;">
+
+    <a ng-if="classes.length>0" class="item item-thumbnail-left">
+            <span> <img src="{{imagebaseurl}}{{classes[0].catageoryimage}}"></span>
+      <h2>{{classes[0].catname}}</h2>
+      <p>{{classes[0].catageorydescription}}</p>
+    </a>
+</div>
+
+        
+        <button ng-repeat="allclases in classes" ui-sref="menu.subject({catid:allclases.catageoryid ,classid:allclases.classid})" style="font-size:14px;text-align:left;" class=" button cat_btn button-calm  button-block icon-right ion-ios-arrow-forward ">{{allclases.classname}}</button>
+        
+         
+    </ion-content>
+</ion-view>

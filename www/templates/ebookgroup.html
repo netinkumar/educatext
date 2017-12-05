@@ -1,0 +1,39 @@
+<ion-view title="Ebook" id="page12">
+
+    <ion-content padding="true" class="has-header">
+        <div class="text_section" ng-repeat="ebook in ebooks">
+        <!-- <p>Author: {{ebook.author_name}}</p>
+        <p>Edition: {{ebook.edition}}</p>
+
+        <a ui-sref="albertEinstein({book_id:ebook.id})">
+      {{ebook.name}}
+        </a > -->
+        <div class="main_box_ebook">
+              <div class="left_ebook">
+                  <p>Author:</p> <span>{{ebook.author_name}}</span>
+              </div>
+              
+                <div class="right_ebook">
+                    <p>Edition:</p> <span>{{ebook.edition}}</span>
+                </div>
+                
+              <div class="btn_ebook">
+                  <a ui-sref="albertEinstein({book_id:ebook.id})">
+                      {{ebook.name}}
+                  </a>
+              </div>
+        </div>
+<!-- 
+<pdf-viewer
+    delegate-handle="my-pdf-container"
+    url="pdfb_url+ebook.saved_name"
+    scale="1"
+    show-toolbar="false"
+    >1</pdf-viewer> -->
+
+     <!-- <a href="{{pdfb_url}}{{ebook.saved_name}}" download>
+      {{ebook.name}}
+        </a> -->
+        </div>
+    </ion-content>
+</ion-view>

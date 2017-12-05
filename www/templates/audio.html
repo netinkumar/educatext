@@ -1,0 +1,27 @@
+<ion-view title="Audio" id="page6">
+
+<ion-nav-buttons side="right">
+      <!--<button class="button button-icon icon ion-plus color_white" ui-sref="addACategory"></button>-->
+    </ion-nav-buttons>
+
+
+    <ion-content padding="true" class="has-header">
+        
+<div class="list audio" ng-repeat="audio in audios">
+
+  
+  <a class="item item-icon-right">
+   {{audio.name}}
+   <button class="play" ng-click="play(audio.name)">play</button>
+   <button class="stop" ng-click="stop()">Stop</button>
+ 
+  </a>
+  
+  
+
+
+</div>
+        
+    </ion-content>
+   
+</ion-view>

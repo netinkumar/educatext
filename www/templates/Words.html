@@ -1,0 +1,83 @@
+<ion-view title="Search words" id="page6" class=" ">
+    
+
+<ion-nav-buttons side="right">
+      <button class="button button-icon icon ion-plus color_white" ui-sref="menu.home"></button>
+    </ion-nav-buttons>
+       
+    <!--<div align="right">
+        <i class="icon ion-search"></i></div>
+        <!--<div>    <i class="icon ion-volume-high"></i></div>-->
+        
+       
+<div class="bar bar-subheader" style="border:none; padding:0;">
+<div class="outer_search" style="position:relative;">
+      <label class="item item-input search_input">
+          <input type="text" placeholder="Search" value="" name="search" ng-change="autoshow()" ng-model="data.keyword">
+		
+	   </label>
+   <button class="button-clear aa" name="button" value="OK" type="button" ng-click ="findword()"><i class="icon ion-search placeholder-icon"></i></button>
+    </div>
+</div>
+        
+<ion-content class="has-subheader">
+        
+        
+       <ul class="list">
+            <li class="item" >
+     
+            </li>
+        </ul>
+    
+    <div class="card" ng-if="show == 1">
+    <div class="item item-text-wrap">
+        <h3 >Meaning</h3>
+        <h5 ng-repeat="dic in result">
+            {{dic.definition}}
+        </h5>
+     
+    </div>
+        <div class="item item-text-wrap">
+        <h3 ng-if="show == 1">Theasure</h3>
+        <h5 ng-repeat="dic in result"><div ng-repeat="dic1 in dic.synonyms">{{dic1}}</div></h5>
+    </div>
+        <div class="item item-text-wrap">
+        <h3 ng-if="show == 1">Sounds</h3>
+        <h5>{{meaning.all}}</h5>
+    </div>
+    </div>
+    
+    
+
+
+
+<!-- <div class="row" id="tabs">
+    <div class="col s12">
+        <a class="menu_box">
+      <ul class="tabs">
+        <li class="tab col s3">Search</li>
+         <label class="item item-input search_input">
+             <input type="text" placeholder="Search" ng-model="data.keyword" name="search" >
+        <i class="icon ion-search placeholder-icon"></i>
+      </label>
+		<li class="tab col s3">Meaning</li>
+                <div ng-repeat="dic in result">
+                    
+                
+                	</div>
+
+        <li class="tab col s3 ">Thesaurus</li>
+        <li class="tab col s3">Sound</li>
+       {{meaning.all}}
+		<button name="button" value="OK" type="button" ng-click ="findword()">Click Me</button>
+      </ul></a>
+    </div>
+    <div id="test1" class="col s12">Search</div>
+    <div id="test2" class="col s12">Meaning</div>
+    <div id="test3" class="col s12">Thesaurus</div>
+    <div id="test4" class="col s12">Sound </div>
+	 
+  </div>-->
+ 
+</ion-content>
+</ion-view>

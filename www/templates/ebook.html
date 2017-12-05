@@ -1,0 +1,11 @@
+<ion-view title="Ebook" id="page12" class=" ">
+    <ion-content padding="true" class="has-header">
+        <div id="ebook-button-bar27" class=" button-bar "></div>
+        <div id="ebook-button-bar28" class=" button-bar "></div>
+        <div id="ebook-button-bar29" class=" button-bar "></div>
+        <div id="ebook-button-bar52" class=" button-bar "></div>
+        <div id="ebook-button-bar61" class=" button-bar "></div>
+    
+        <button ng-repeat="allcat in categories"  ui-sref="menu.ebookgroup({cat_id: allcat.id})" style="font-size:14px;text-align:left;" class=" button cat_btn button-calm  button-block icon-right ion-ios-arrow-forward ">{{allcat.name}}</button>
+    </ion-content>
+</ion-view>
